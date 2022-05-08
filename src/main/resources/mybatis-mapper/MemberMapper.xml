@@ -5,7 +5,14 @@
         "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
 <mapper namespace="com.teamY.simple.simplyChat.mapper.MemberMapper">
 
-    <select id="selectTest" resultType="MemberVO">
-        SELECT * FROM test.test_schema;
+    <select id="selectMemberByNickname" resultType="MemberVO">
+        SELECT id, IFNULL(file_id, 0), nickname, member.password
+        FROM member
+        WHERE nickname = #{nickname}
     </select>
+
+    <insert id="insertMember">
+        INSERT INTO member(nickname, password)
+        VALUES(#{nickname}, #{password})
+    </insert>
 </mapper>

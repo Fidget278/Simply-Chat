@@ -6,7 +6,7 @@ import org.springframework.boot.builder.SpringApplicationBuilder;
 import org.springframework.boot.web.servlet.support.SpringBootServletInitializer;
 import org.springframework.context.annotation.ComponentScan;
 
-@ComponentScan(basePackages = {"com.teamY"})
+@ComponentScan(basePackages = {"com.teamY.simple"})
 @SpringBootApplication
 public class SimplyChatApplication extends SpringBootServletInitializer {
 
