@@ -16,7 +16,8 @@ class SimplyChatApplicationTests {
 
 	@Test
 	void contextLoads() {
-		log.info(mapper.selectTest().toString());
+		//log.info(mapper.selectMemberByNickname().toString());
+		log.info(mapper.selectMemberByNickname("asdf").toString());
 	}
 
 }
