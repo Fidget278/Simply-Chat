@@ -3,8 +3,17 @@
 <head>
     <meta charset="UTF-8">
     <title>main</title>
+    <link th:href="@{/css/style.css}" rel="stylesheet"/>
 </head>
-<body>
-this is main
+<body class = "main">
+
+<th:block layout:fragment="frameLeft"
+          th:include="@{left.html}"></th:block>
+
+<th:block layout:fragment="frameLeft"
+          th:include="@{chat.html}"></th:block>
+
+<th:block layout:fragment="frameRight"
+          th:include="@{right.html}"></th:block>
 </body>
 </html>

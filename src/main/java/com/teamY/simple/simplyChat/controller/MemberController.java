@@ -54,4 +54,6 @@ public class MemberController {
         memberService.registerMember(memberVO);
         return "redirect:/hello";
     }
+
+
 }
