@@ -1,0 +1,23 @@
+.left-side-box {
+    width : 20%;
+}
+
+.logo {
+    height : 5%;
+}
+.chat-list {
+    height : 90%;
+}
+
+.user-info {
+    display: flex;
+    height : 5%;
+}
+
+#userNickname {
+    width : 70%;
+}
+
+#logout {
+    width : 30%;
+}

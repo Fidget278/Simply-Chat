@@ -3,17 +3,17 @@
 <head>
     <meta charset="UTF-8">
     <title>main</title>
-    <link th:href="@{/css/style.css}" rel="stylesheet"/>
+    <link th:href="@{/css/styles.css}" rel="stylesheet"/>
 </head>
 <body class = "main">
 
 <th:block layout:fragment="frameLeft"
-          th:include="@{left.html}"></th:block>
+          th:include="@{left-box.html}"></th:block>
 
 <th:block layout:fragment="frameLeft"
-          th:include="@{chat.html}"></th:block>
+          th:include="@{center-box.html}"></th:block>
 
 <th:block layout:fragment="frameRight"
-          th:include="@{right.html}"></th:block>
+          th:include="@{right-box.html}"></th:block>
 </body>
 </html>

@@ -1,3 +1,7 @@
+@import "left-box.css";
+@import "right-box.css";
+@import "center-box.css";
+
 .test {
     border: 1px solid #333;
 }
@@ -6,18 +10,9 @@ html, body {
     height : 100%;
     margin : 0;
 }
+
 .main {
     display : flex;
 }
 
-.left-side-box {
-    width : 20%;
-}
 
-.right-side-box {
-    width : 20%;
-}
-
-.chat-box {
-    width : 60%;
-}
