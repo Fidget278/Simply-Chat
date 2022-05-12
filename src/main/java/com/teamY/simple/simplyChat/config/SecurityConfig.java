@@ -49,7 +49,7 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter {
 
         http
                 .authorizeRequests()
-                .antMatchers("/hello", "/loginPage", "/login").permitAll()
+                .antMatchers("/hello", "/loginPage", "/login", "/image").permitAll()
                 .anyRequest().authenticated();
         http
                 .formLogin().loginPage("/loginPage")

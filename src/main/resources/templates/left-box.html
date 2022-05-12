@@ -1,12 +1,15 @@
 <div class = "test left-side-box">
-    <div class = "logo">로고</div>
+    <div class = "test logo">로고</div>
 
     <div class = "chat-list">
 
     </div>
 
-    <div class = "user-info">
-        <div id = "userNickname" th:text = "${#authentication.principal.getNickname}">닉네임</div>
+    <div class = "test left-side-footer">
+        <div class = "user-info">
+            <image class = "userImage" th:src = "${#authentication.principal.getSystemFileName}"/>
+            <div id = "userNickname" th:text = "${#authentication.principal.getNickname}">닉네임</div>
+        </div>
         <div id = "logout">로그아웃</div>
     </div>
 

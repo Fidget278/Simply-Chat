@@ -18,15 +18,16 @@ public class MemberPrincipal implements UserDetails {
     private final int id;
     private final String nickname;
     private final String password;
+    private final String systemFileName;
     private final Collection<GrantedAuthority> authorities;
 
     public MemberVO getMemberVO() {
         return new MemberVO(id, nickname);
     }
 
-    public static MemberPrincipal createMemberPrincipal(MemberVO memberVO) {
+    public static MemberPrincipal createMemberPrincipal(MemberVO memberVO, String systemFileName) {
         return new MemberPrincipal(
-                memberVO.getId(), memberVO.getNickname(), memberVO.getPassword()
+                memberVO.getId(), memberVO.getNickname(), memberVO.getPassword(), systemFileName
                 , Collections.singletonList(new SimpleGrantedAuthority("ROLE_USER")));
     }
 

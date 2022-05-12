@@ -23,6 +23,8 @@ public class CustomUserDetailsService implements UserDetailsService {
             throw new UsernameNotFoundException("UsernameNotFoundException, memberVo == null");
 
         log.info("login Member : " + memberVO.toString());
-        return MemberPrincipal.createMemberPrincipal(memberVO);
+
+        String systemFileName = "https://t1.daumcdn.net/cfile/tistory/2513B53E55DB206927";
+        return MemberPrincipal.createMemberPrincipal(memberVO, systemFileName);
     }
 }

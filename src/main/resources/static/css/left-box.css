@@ -9,13 +9,25 @@
     height : 90%;
 }
 
-.user-info {
+.left-side-footer {
     display: flex;
     height : 5%;
 }
+.user-info {
+    display: flex;
+    width : 70%;
+}
+
+.userImage {
+    position: relative;
+    border-radius: 50%;
+    width:45px;
+    height:100%;
+
+}
 
 #userNickname {
-    width : 70%;
+
 }
 
 #logout {
